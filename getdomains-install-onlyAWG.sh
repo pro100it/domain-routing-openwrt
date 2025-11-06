@@ -453,7 +453,7 @@ add_getdomains() {
     if [ "$COUNTRY" != '0' ]; then
         printf "\033[32;1mCreate script /etc/init.d/getdomains\033[0m\n"
 cat << EOF > /etc/init.d/getdomains
-#!/binsh /etc/rc.common
+#!/bin/sh /etc/rc.common
 START=99
 start () {
     $EOF_DOMAINS
